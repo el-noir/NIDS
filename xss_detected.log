@@ -1,0 +1,2 @@
+XSS Detected: username=adminA&password=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
+[2024-12-15 11:37:02] XSS Detected: username=mohsin&password=%3Cscript%3Ealert%28%E2%80%981%E2%80%99%29%3C%2Fscript%3E
