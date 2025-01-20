@@ -1,3 +1,5 @@
+# Cleaned up version of your script
+
 import socket
 import struct
 import textwrap
@@ -137,9 +139,7 @@ def detect_xss(payload):
     print(f"Decoded Payload: {decoded_payload}")  # Add this line for debugging
 
     for pattern in XSS_PATTERNS:
-        print(f"Checking pattern: {pattern}")  # Debugging line to see which pattern is being checked
         if pattern.search(decoded_payload):
-            print(f"XSS Pattern Matched: {pattern} in Payload: {decoded_payload}")  # Debugging line
             return True
 
     return False

@@ -298,7 +298,6 @@ def main():
                 print(format_multi_line(DATA_TAB_3, decoded_payload) )
                 
                 count += 1
-
                 log_tcp_packet(src, src_port, target, dest_port, sequence, acknowledgment, flag_urg, flag_ack, flag_psh, flag_rst, flag_syn, flag_fin, window_size, urgent_pointer, count)
                 
                 if detect_syn_flood(src) == True:
